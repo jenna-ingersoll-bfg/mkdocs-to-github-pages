@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>
+    .hero { 
+      background-image: url('assets/images/bfg-hero.jpg'); 
+      background-position: bottom; 
+      background-size: cover;
+      height: 400px; 
+      width: 100%;
+    }
+    
+    .hero h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      color: white;
+    }
+
+    .hero h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #003d6e;
+      padding-top: 3rem;
+    }
+  </style>
+  <div class="hero">
+    <h2>{{config.site_description}}</h2>
+    <h1>{{config.site_name}}</h1>
+  </div>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
