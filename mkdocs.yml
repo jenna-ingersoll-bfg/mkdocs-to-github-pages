@@ -28,4 +28,4 @@ nav:
   - Producer Handbook: 
     - Overview of the Producer Handbook: static/prod_welcome.md
   - BFG SDK Reference:
-    - Test SDK Page: bfgsdk/sdktest.html
+    - Test SDK Page: bfgsdk/sdktest.md
