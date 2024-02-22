@@ -25,4 +25,5 @@ nav:
     - Welcome Developer!: static/dev_welcome.md
     - The Onboarding Process: static/dev_onboarding.md
     - Security & Privacy Standards: static/dev_security.md
-  - Producer Handbook: static/prod_welcome.md
+  - Producer Handbook: 
+    - Overview of the Producer Handbook: static/prod_welcome.md
