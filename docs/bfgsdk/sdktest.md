@@ -1,3 +1,8 @@
+---
+name: SDK Test
+template: sdk.html
+---
+
 # BFGSDK.bfgDiskUtils Class Reference
 
 ## Static Public Member Functions
