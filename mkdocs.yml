@@ -21,7 +21,8 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Developer User Guide: static/dev_welcome.md:
+  - Developer User Guide:
+    - Welcome Developer!: static/dev_welcome.md
     - The Onboarding Process: static/dev_onboarding.md
     - Security & Privacy Standards: static/dev_security.md
   - Producer Handbook: static/prod_welcome.md
