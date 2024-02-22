@@ -1,4 +1,4 @@
-  ---
+---
 name: SDK Test
 template: sdk.html
 ---
