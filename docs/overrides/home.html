@@ -22,11 +22,37 @@
       color: #003d6e;
       padding-top: 3rem;
     }
+
+    .section {
+      width: 100%;
+      display: table;
+    }
+
+    .section-row {
+      display: table-row;
+      min-height: 200px;
+    }
+
+    .section-cell {
+      display: table-cell;
+      width: 33%;
+      padding: 10px;
+    }
   </style>
+
   <div class="hero">
     <h2>{{config.site_description}}</h2>
     <h1>{{config.site_name}}</h1>
   </div>
+
+  <div class="section">
+    <div class="section-row">
+      <div class="section-cell" style="background-color: blue;"> Testing 1</div>
+      <div class="section-cell" style="background-color: red;"> Testing 2</div>
+      <div class="section-cell" style="background-color: green;"> Testing 3</div>
+    </div>
+  </div>
+
 {% endblock %}
 {% block content %}{% endblock %}
 {% block site_nav %}{% endblock %}
