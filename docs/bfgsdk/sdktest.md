@@ -1,6 +1,6 @@
 ---
 name: SDK Test
-template: home.html
+template: sdk.html
 ---
 
 # BFGSDK.bfgDiskUtils Class Reference
