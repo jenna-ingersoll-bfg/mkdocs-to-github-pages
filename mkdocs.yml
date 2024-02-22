@@ -11,6 +11,7 @@ theme:
     text: Montserrat
   features:
     - search.suggest
+    - navigation.tabs
 
 plugins:
   - search
@@ -20,4 +21,7 @@ extra_css:
 
 nav:
   - Home: index.md
-  - About: about.md
+  - Developer User Guide: static/dev_welcome.md
+    - The Onboarding Process: static/dev_onboarding.md
+    - Security & Privacy Standards: static/dev_security.md
+  - Producer Handbook: static/prod_welcome.md
