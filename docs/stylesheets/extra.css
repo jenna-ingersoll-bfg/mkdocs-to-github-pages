@@ -13,3 +13,7 @@ Header Bar
 .md-header__topic {
     display: none;
 }
+
+.md-grid {
+    max-width: 68rem;
+}
