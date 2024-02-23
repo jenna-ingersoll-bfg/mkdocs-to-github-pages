@@ -12,9 +12,9 @@ theme:
   features:
     - search.suggest
     - navigation.tabs
-    - navigation.footer
-  extra:
-    generator: false
+
+extra:
+  generator: false
 
 plugins:
   - search
