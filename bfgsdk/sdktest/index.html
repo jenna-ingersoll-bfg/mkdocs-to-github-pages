@@ -1,0 +1,1022 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Your gateway into Big Fish's documentation">
+      
+      
+      
+      
+        <link rel="prev" href="../../static/prod_welcome/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+    
+    
+      
+        <title>bfgDiskUtils - The ANCHOR MkDocs</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+  <style>
+ table.memberdecls {
+	border-spacing: 0px;
+	padding: 0px;
+}
+
+.memberdecls td, .fieldtable tr {
+	-webkit-transition-property: background-color, box-shadow;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property: background-color, box-shadow;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property: background-color, box-shadow;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property: background-color, box-shadow;
+	-o-transition-duration: 0.5s;
+	transition-property: background-color, box-shadow;
+	transition-duration: 0.5s;
+}
+
+.memberdecls td.glow, .fieldtable tr.glow {
+	background-color: cyan;
+	box-shadow: 0 0 15px cyan;
+}
+
+.mdescLeft, .mdescRight,
+.memItemLeft, .memItemRight,
+.memTemplItemLeft, .memTemplItemRight, .memTemplParams {
+	background-color: #F3F9FE;
+	border: none;
+	margin: 4px;
+	padding: 1px 0 0 8px;
+}
+
+.mdescLeft, .mdescRight {
+	padding: 0px 8px 4px 8px;
+	color: #555;
+}
+
+.memSeparator {
+        border-bottom: 1px solid #BDDFFF;
+        line-height: 1px;
+        margin: 0px;
+        padding: 0px;
+}
+
+.memItemLeft, .memTemplItemLeft {
+        white-space: nowrap;
+}
+
+.memItemRight, .memTemplItemRight {
+	width: 100%;
+}
+
+.memTemplParams {
+	color: #0057A9;
+        white-space: nowrap;
+	font-size: 80%;
+}
+
+.memtitle {
+	padding: 8px;
+	margin-bottom: -1px !important;
+	border-top: 1px solid #59AEFF;
+	border-left: 1px solid #59AEFF;
+	border-right: 1px solid #59AEFF;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	background-image: url('nav_f.png');
+	background-repeat: repeat-x;
+	background-color: #C6E3FE;
+	line-height: 1.25;
+	font-weight: 300;
+	font-size: 1rem !important;
+	float:left;
+}
+
+.permalink
+{
+        font-size: 65%;
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.memtemplate {
+	font-size: 80%;
+	color: #0057A9;
+	font-weight: normal;
+	margin-left: 9px;
+}
+
+.memnav {
+	background-color: #D8ECFF;
+	border: 1px solid #50AAFE;
+	text-align: center;
+	margin: 2px;
+	margin-right: 15px;
+	padding: 2px;
+}
+
+.mempage {
+	width: 100%;
+}
+
+.memitem {
+	padding: 0;
+	margin-bottom: 10px;
+	margin-right: 5px;
+        -webkit-transition: box-shadow 0.5s linear;
+        -moz-transition: box-shadow 0.5s linear;
+        -ms-transition: box-shadow 0.5s linear;
+        -o-transition: box-shadow 0.5s linear;
+        transition: box-shadow 0.5s linear;
+        display: table !important;
+        width: 100%;
+}
+
+.memitem.glow {
+         box-shadow: 0 0 15px cyan;
+}
+
+.memname {
+        font-weight: 400;
+        margin-left: 6px;
+}
+
+.memname td {
+	vertical-align: bottom;
+}
+
+.memproto, dl.reflist dt {
+        border-top: 1px solid #59AEFF;
+        border-left: 1px solid #59AEFF;
+        border-right: 1px solid #59AEFF;
+        padding: 6px 0px 6px 0px;
+        color: #002344;
+        font-weight: bold;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
+        background-color: #C0E0FF;
+        /* opera specific markup */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+        border-top-right-radius: 4px;
+        /* firefox specific markup */
+        -moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
+        -moz-border-radius-topright: 4px;
+        /* webkit specific markup */
+        -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+        -webkit-border-top-right-radius: 4px;
+
+}
+
+.overload {
+        font-family: "courier new",courier,monospace;
+	font-size: 65%;
+}
+
+.memdoc, dl.reflist dd {
+        border-bottom: 1px solid #59AEFF;      
+        border-left: 1px solid #59AEFF;      
+        border-right: 1px solid #59AEFF; 
+        padding: 6px 10px 2px 10px;
+        background-color: #F8FBFF;
+        border-top-width: 0;
+        background-image:url('nav_g.png');
+        background-repeat:repeat-x;
+        background-color: #FFFFFF;
+        /* opera specific markup */
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+        /* firefox specific markup */
+        -moz-border-radius-bottomleft: 4px;
+        -moz-border-radius-bottomright: 4px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
+        /* webkit specific markup */
+        -webkit-border-bottom-left-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+dl.reflist dt {
+        padding: 5px;
+}
+
+dl.reflist dd {
+        margin: 0px 0px 10px 0px;
+        padding: 5px;
+}
+
+.paramkey {
+	text-align: right;
+}
+
+.paramtype {
+	white-space: nowrap;
+}
+
+.paramname {
+	color: #602020;
+	white-space: nowrap;
+}
+.paramname em {
+	font-style: normal;
+}
+.paramname code {
+        line-height: 14px;
+}
+
+.params, .retval, .exception, .tparams {
+        margin-left: 0px;
+        padding-left: 0px;
+}       
+
+.params .paramname, .retval .paramname, .tparams .paramname, .exception .paramname {
+        font-weight: bold;
+        vertical-align: top;
+}
+        
+.params .paramtype, .tparams .paramtype {
+        font-style: italic;
+        vertical-align: top;
+}       
+        
+.params .paramdir, .tparams .paramdir {
+        font-family: "courier new",courier,monospace;
+        vertical-align: top;
+}
+
+table.mlabels {
+	border-spacing: 0px;
+}
+
+td.mlabels-left {
+	width: 100%;
+	padding: 0px;
+}
+
+td.mlabels-right {
+	vertical-align: bottom;
+	padding: 0px;
+	white-space: nowrap;
+}
+
+span.mlabels {
+        margin-left: 8px;
+}
+
+span.mlabel {
+        background-color: #0081FA;
+        border-top:1px solid #0067C9;
+        border-left:1px solid #0067C9;
+        border-right:1px solid #8DC8FF;
+        border-bottom:1px solid #8DC8FF;
+	text-shadow: none;
+	color: white;
+	margin-right: 4px;
+	padding: 2px 3px;
+	border-radius: 3px;
+	font-size: 7pt;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+  </style>
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bfgsdkbfgdiskutils-class-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The ANCHOR MkDocs" class="md-header__button md-logo" aria-label="The ANCHOR MkDocs" data-md-component="logo">
+      
+  <img src="../../assets/images/bfg-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The ANCHOR MkDocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              bfgDiskUtils
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../static/dev_welcome/" class="md-tabs__link">
+          
+  
+  Developer User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../static/prod_welcome/" class="md-tabs__link">
+          
+  
+  Producer Handbook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  BFG SDK Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The ANCHOR MkDocs" class="md-nav__button md-logo" aria-label="The ANCHOR MkDocs" data-md-component="logo">
+      
+  <img src="../../assets/images/bfg-logo.png" alt="logo">
+
+    </a>
+    The ANCHOR MkDocs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Developer User Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Developer User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static/dev_welcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome Developer!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static/dev_onboarding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Onboarding Process
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static/dev_security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security & Privacy Standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Producer Handbook
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Producer Handbook
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static/prod_welcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview of the Producer Handbook
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    BFG SDK Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            BFG SDK Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    bfgDiskUtils
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    bfgDiskUtils
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#static-public-member-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Public Member Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#member-function-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Member Function Documentation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#static-public-member-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Public Member Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#member-function-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Member Function Documentation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="bfgsdkbfgdiskutils-class-reference">BFGSDK.bfgDiskUtils Class Reference</h1>
+<h2 id="static-public-member-functions">Static Public Member Functions</h2>
+<table class="memberdecls">
+  <tr class="memitem:af0e78846a4941a818db2b629aa7eb24e">
+    <td class="memItemLeft" align="right" valign="top">static long&#160;</td>
+    <td class="memItemRight" valign="bottom"><a class="el" href="class_b_f_g_s_d_k_1_1bfg_disk_utils.html#af0e78846a4941a818db2b629aa7eb24e">availableDiskSpace</a> ()</td>
+  </tr>
+  <tr class="memdesc:af0e78846a4941a818db2b629aa7eb24e">
+    <td class="mdescLeft">&#160;</td>
+    <td class="mdescRight">Get amount of available space in internal storage. Android also has an 'external' storage that requires a read permission, so it is not implemented here. <a href="class_b_f_g_s_d_k_1_1bfg_disk_utils.html#af0e78846a4941a818db2b629aa7eb24e">More...</a><br /></td>
+  </tr>
+  <tr class="separator:af0e78846a4941a818db2b629aa7eb24e">
+    <td class="memSeparator" colspan="2">&#160;</td>
+  </tr>
+</table>
+
+<h2 id="member-function-documentation">Member Function Documentation</h2>
+<p><a id="af0e78846a4941a818db2b629aa7eb24e" name="af0e78846a4941a818db2b629aa7eb24e"></a></p>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e78846a4941a818db2b629aa7eb24e">&#9670;&nbsp;</a></span>availableDiskSpace()</h2>
+
+<div class="memitem">
+  <div class="memproto">
+    <table class="mlabels">
+      <tr>
+        <td class="mlabels-left">
+          <table class="memname">
+            <tr>
+              <td class="memname">static long BFGSDK.bfgDiskUtils.availableDiskSpace </td>
+              <td>(</td>
+              <td class="paramname"></td><td>)</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td class="mlabels-right"><span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+      </tr>
+    </table>
+  </div>
+  <div class="memdoc">
+    <p>Get amount of available space in internal storage. Android also has an 'external' storage that requires a read permission, so it is not implemented here. </p>
+    <dl class="section return"><dt>Returns</dt><dd>The device's available disk space in bytes.</dd></dl>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+
+  My CUSTOM TEXT
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
